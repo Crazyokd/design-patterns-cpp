@@ -156,6 +156,12 @@ int main()
   ProductA *p2 = factoryY->createProductA();
   std::cout << "Product: " << p2->getName() << std::endl;
   
+  ProductB *p3 = factoryX->createProductB();
+  std::cout << "Product: " << p3->getName() << std::endl;
+
+  ProductB *p4 = factoryY->createProductB();
+  std::cout << "Product: " << p4->getName() << std::endl;
+
   delete p1;
   delete p2;
   

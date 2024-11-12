@@ -111,6 +111,8 @@ int main()
   FlyweightFactory *factory = new FlyweightFactory;
   factory->getFlyweight(1)->operation();
   factory->getFlyweight(2)->operation();
+  // already exist in pool
+  factory->getFlyweight(1)->operation();
   delete factory;
   return 0;
 }

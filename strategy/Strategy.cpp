@@ -90,8 +90,14 @@ private:
 
 int main()
 {
-  Context context( new ConcreteStrategyA() );
-  context.contextInterface();
+  Context context1( new ConcreteStrategyA() );
+  context1.contextInterface();
   
+  Context context2( new ConcreteStrategyB() );
+  context2.contextInterface();
+
+  Context context3( new ConcreteStrategyB() );
+  context3.contextInterface();
+
   return 0;
 }
